@@ -11,7 +11,6 @@ import Modal from "../../ui/Modal";
 import { HiOutlineExclamationTriangle } from "react-icons/hi2";
 import { useDeleteBoard } from "./useDeleteBoard";
 import { useEditTask } from "../tasks/useEditTask";
-import { editTask } from "../../services/apiTasks";
 
 const BoardContainer = styled.div`
   width: 100%;

@@ -2,7 +2,6 @@ import { useDroppable } from "@dnd-kit/core";
 import TaskCard from "./TaskCard";
 import type { Task } from "../../types/task";
 import styled from "styled-components";
-import { HiPlus } from "react-icons/hi2";
 import AddTask from "./AddTask";
 
 const ColumnContainer = styled.div`
