@@ -53,7 +53,12 @@ function AddTask() {
     if (!boardId) return;
     if (!title) return toast.error("Task must have a title!");
 
-    createTask({ boardId, title, description });
+    createTask({ boardId, title, description }, {
+      onSettled: () => {
+        setTitle("")
+        setDescription("")
+      }
+    });
   };
   return (
     <Modal>
